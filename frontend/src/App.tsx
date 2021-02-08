@@ -1,17 +1,20 @@
 import { Box } from '@material-ui/core';
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 //import './App.css';
 import { Navbar } from './components/Navbar';
-import { Page } from './components/Page';
+import { Page } from './Page';
+import AppRouter from './routes/AppRouter';
 function App() {
   return (
     <React.Fragment>
-      <Navbar />
-      <Box paddingTop={'70px'}>
-        <Page title={'Categorias'}>
-          Conteudo
-        </Page>
-      </Box>
+      <BrowserRouter>  {/*Tipo de roteamento,  */}
+        <Navbar />
+        <Box paddingTop={'70px'}>
+          <AppRouter />
+        </Box>
+
+      </BrowserRouter>
     </React.Fragment>
   );
 }

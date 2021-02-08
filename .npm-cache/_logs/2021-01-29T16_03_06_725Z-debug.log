@@ -1,0 +1,34 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '@types/react-route-dom',
+1 verbose cli   '--save' ]
+2 info using npm@6.13.4
+3 info using node@v10.19.0
+4 verbose npm-session 774b225395354a22
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 http fetch GET 404 https://registry.npmjs.org/@types%2freact-route-dom 1117ms
+8 http fetch GET 404 https://registry.npmjs.org/@types%2freact-route-dom 909ms
+9 silly fetchPackageMetaData error for @types/react-route-dom@latest 404 Not Found - GET https://registry.npmjs.org/@types%2freact-route-dom - Not found
+10 timing stage:rollbackFailedOptional Completed in 0ms
+11 timing stage:runTopLevelLifecycles Completed in 5776ms
+12 verbose stack Error: 404 Not Found - GET https://registry.npmjs.org/@types%2freact-route-dom - Not found
+12 verbose stack     at res.buffer.catch.then.body (/usr/lib/node_modules/npm/node_modules/npm-registry-fetch/check-response.js:104:15)
+12 verbose stack     at process._tickCallback (internal/process/next_tick.js:68:7)
+13 verbose statusCode 404
+14 verbose pkgid @types/react-route-dom@latest
+15 verbose cwd /workspace/frontend
+16 verbose Linux 4.19.128-microsoft-standard
+17 verbose argv "/usr/bin/node" "/usr/bin/npm" "install" "@types/react-route-dom" "--save"
+18 verbose node v10.19.0
+19 verbose npm  v6.13.4
+20 error code E404
+21 error 404 Not Found - GET https://registry.npmjs.org/@types%2freact-route-dom - Not found
+22 error 404
+23 error 404 '@types/react-route-dom@latest' is not in the npm registry.
+24 error 404 You should bug the author to publish it (or use the name yourself!)
+25 error 404 Note that you can also install from a
+26 error 404 tarball, folder, http url, or git url.
+27 verbose exit [ 1, true ]
